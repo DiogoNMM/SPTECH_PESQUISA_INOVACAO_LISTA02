@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex3 lista 02.css">
+    <title>Lista 02 ex3</title>
+</head>
+<body>
+<div id="div3a">
+<div id="div3b"></div>
+<div id="div3c"></div>
+<div id="div3d">Ex 03</div>
+</div>
+</body>
+</html>
