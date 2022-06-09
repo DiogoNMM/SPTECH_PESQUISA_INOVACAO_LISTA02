@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfe</title>
+</head>
+<body>
+
+    <h1>turfe amigo</h1>
+    <button onclick="volta()" >dar uma volta</button><br><br>
+    <div id="mostrar" ></div>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+    var somaC1= 0;
+    var somaC2 = 0;
+    var somaC3 = 0;
+    var i = 1;
+    var primeiro = 0;
+    function volta() {
+
+            if (i < 8 ) {
+                
+                var cavalo1 = Number((Math.random() * 2 + 7).toFixed(1));
+                var cavalo2 = Number((Math.random() * 2 + 7).toFixed(1));
+    
+                var cavalo3 = Number((Math.random() * 2 + 7).toFixed(1));
+    
+                somaC1 += cavalo1;
+                somaC2 += cavalo2;
+                somaC3 += cavalo3;
+    
+            
+    
+                mostrar.innerHTML += `Volta ${i}<br>
+                Cavalo 1 - ${cavalo1.toFixed(1)} / ${somaC1.toFixed(1)} - Cavalo 2 ${cavalo2.toFixed(1)} / ${somaC2.toFixed(1)} - Cavalo 3 ${cavalo3.toFixed(1)} / ${somaC3.toFixed(1)}<br><br>`
+
+               i++
+
+            }else if(i = 8){
+                
+                for (var c = 1; c <= 3; c++) {
+                    
+                    if (somaC1 < somaC2 && somaC1 < somaC3) {
+                        mostrar.innerHTML += `Em ${c}º lugar - Cavalo ${c}<br>`
+                    } if (somaC2 < somaC1 && somaC2 < somaC3) {
+                        mostrar.innerHTML += `Em ${c}º lugar - Cavalo ${c} <br>`
+                    } else if (somaC3 < somaC1 && somaC3 < somaC3) {
+                        mostrar.innerHTML += `Em ${c}º lugar - Cavalo ${c}<br>`
+                    }  else if (somaC3 < somaC1 && somaC3 < somaC3) {
+                        mostrar.innerHTML += `Em ${c}º lugar - Cavalo ${c}<br>`
+                    } 
+                }
+            }
+
+
+
+               
+               
+            
+
+
+            
+        
+
+    }
+</script>
